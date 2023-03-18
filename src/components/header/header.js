@@ -13,7 +13,7 @@ function Header () {
                 </ul>
                 <ul className="desktop">
                     <li><Link to="/">Home</Link></li>
-                    <li id="projectsLink"><Link to="/projects">Music</Link></li>
+                    <li id="projectsLink"><Link to="/music">Music</Link></li>
                     <li><Link to="/info">Contact Info/About</Link></li>
                 </ul>
             </Box>

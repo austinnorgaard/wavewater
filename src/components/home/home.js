@@ -27,7 +27,7 @@ function Home() {
                     </Box>
                 </Box>
                 <Box as="section" id="projects">
-                    <Box as="h2"><Link to="/projects">&#8594; See our work &#8592;</Link></Box>
+                    <Box as="h2"><Link to="/music">&#8594; See our work &#8592;</Link></Box>
                 </Box>
             </Box>
         </Box>

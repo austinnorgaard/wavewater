@@ -12,7 +12,7 @@ function Projects() {
                     <Box as="h2" id="projectHeader">My Music</Box>
                     <br />
                     <ul id="musicList">
-                        <i><Link to="/projects/project1">Heart Smile</Link></i>
+                        <i><Link to="/music/heartsmile">Heart Smile</Link></i>
                     </ul>
                 </Box>
             </Box>

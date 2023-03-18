@@ -1,46 +1,28 @@
 import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom';
-import github from '../../github.png';
-import linkedin from '../../linkedin.png';
-import instagram from '../../instagram.png';
-import Sidebar from '../sidebar/sidebar';
-import ResumeGallery from '../gallery/resumeGallery';
+import instagram from '../../instagram.svg';
+import apple from '../../apple.svg';
+import spotify from '../../spotify.svg';
+import Header from '../header/header';
 
-const email = "me@austinnorgaard.com";
+const email = "help@wavewatermusic.com";
 
 function Info() {
     return (
         <Box className="Info">
-            <Box as="header">
-                <Box as="nav">
-                    <Sidebar />
-                    <ul id="nametag">
-                        <li><Link to="/">Austin Norgaard</Link></li>
-                    </ul>
-                    <ul className="desktop">
-                        <li><Link to="/">Home</Link></li>
-                        <li id="projectsLink"><Link to="/projects">Projects</Link></li>
-                        <li><Link to="/info">Contact Info/Links</Link></li>
-                    </ul>
-                </Box>
-            </Box>
+            <Header />
             <Box as="main" id="main">
                 <Box as="h1" id="content">Contact Info:
-                    <Box as="p">austin norgaard</Box>
-                    <Box as="p">email: <Link id="link" to={'mailto:' + email}>me@austinnorgaard.com</Link></Box>
+                    <Box as="p">WaveWater Music</Box>
+                    <Box as="p">email: <Link id="link" to={'mailto:' + email}>help@wavewatermusic.com</Link></Box>
                     <Box as="p">phone: 503-987-2311</Box>
                 </Box>
                 <Box as="h1" id="links">Links:<br/>
                     <Box>
-                    <Link id="link" to="https://github.com/austinnorgaard" target="_blank"><Box as="img" src={github} alt="github" /></Link>
-                    <Link id="link" to="https://linkedin.com/in/austinnorgaard" target="_blank"><Box as="img" src={linkedin} alt="linkedin" /></Link>
-                    <Link id="link" to="https://instagram.com/norgaustin" target="_blank"><Box as="img" src={instagram} alt="instagram" /></Link>
+                    <Link id="link" to="https://www.instagram.com/wavewatermusic/" target="_blank"><Box as="img" src={instagram} alt="instagram" /></Link>
+                    <Link id="link" to="https://music.apple.com/us/artist/wavewater/1600723068" target="_blank"><Box as="img" src={apple} alt="apple" /></Link>
+                    <Link id="link" to="https://open.spotify.com/artist/5C82QtjAalrNh6Nxm6FDxC?si=C33DQ3AMQRWY6KYPdy_k5A" target="_blank"><Box as="img" src={spotify} alt="spotify" /></Link>
                     </Box>
-                </Box>
-            </Box>
-            <Box as="h1" id="resumeHeader">Resume:
-                <Box as="section" className="image-gallery-wrapper" id="resume">
-                    <ResumeGallery className="image-gallery"/>
                 </Box>
             </Box>
         </Box>

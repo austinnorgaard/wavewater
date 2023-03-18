@@ -2,6 +2,7 @@
 /* style.css */
 * {
   z-index: 1;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .menuClicked, .menuUnclicked {
@@ -17,12 +18,27 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   height: 100%;
+  background: #3a8db4;
+}
+
+#main a {
+  color: white;
+}
+
+.bg-image {
+  background-image: url('./logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100%;
+  min-width: 100%;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 1.0);
-  border: 1px solid rgb(0, 0, 0);
-  box-shadow: #2b15453d 1px 10px 20px 5px;
+  background: rgb(58,141,180);
+  background: linear-gradient(0deg, rgba(58,141,180,1) 0%, rgba(191,132,215,1) 46%, rgba(235,137,197,1) 66%, rgba(249,182,130,1) 85%);
+  border-bottom: 0.5px solid white;
   color: #fff;
   padding: 2rem;
   display: flex;
@@ -54,6 +70,13 @@ nav ul {
   align-items: center;
 }
 
+div.Home {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -72,20 +95,29 @@ header nav ul > li {
   flex-direction: row;
   justify-content: flex-start;
   gap: 25%;
-  height: 100%;
   display: flex;
+  color: white;
+  background-color: rgba(68, 94, 105, 0.36);
 }
 
 .Info main #content p {
   justify-content: flex-start;
   text-align: left;
   padding-top: 1rem;
+  width: 300%;
+  border: none;
+}
+
+.Info main #content p a {
+  color: white;
 }
 
 .Info main #content {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 .Info main #links {
@@ -94,6 +126,7 @@ header nav ul > li {
   flex-direction: column;
   min-width: 50%;
   justify-content: flex-start;
+  padding-top: 1rem;
 }
 
 .Info main #links * {
@@ -123,6 +156,19 @@ header nav ul > li {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  color: white;
+}
+
+#projects * * a {
+  color: white;
+}
+
+.Projects main {
+  background: rgba(249, 182, 130, 0.9);
+}
+
+.Project1 main a {
+  color: white;
 }
 
 ul {
@@ -132,6 +178,27 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#embed {
+  padding-top: 2rem;
+  width:100%;
+  max-width:660px;
+  overflow:hidden;
+  background:transparent;
+}
+
+#songLinksList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#musicList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 ul i {
@@ -144,7 +211,22 @@ ul i {
 }
 
 main {
-  padding: 20px;
+  position: absolute;
+
+  top: 0;
+  left: 7.5%;
+  margin-top: 15vh;
+
+  width: 85%;
+  height: 60%;
+
+  z-index: 2;
+
+  text-align: center;
+
+  backdrop-filter: blur(50px);
+  color: white;
+  border: 3px solid #f1f1f1;;
 }
 
 section {
@@ -270,7 +352,6 @@ a {
 }
 
 #projectHeader {
-  text-decoration: underline;
   font-size: 250%;
 }
 
@@ -350,4 +431,8 @@ img {
   flex-direction: column;
   margin-left: 1rem;
   align-items: flex-start;
+}
+
+.Project1 main {
+  background: rgba(249, 182, 130, 0.9);
 }

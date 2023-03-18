@@ -1,0 +1,353 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+/* style.css */
+* {
+  z-index: 1;
+}
+
+.menuClicked, .menuUnclicked {
+  display: none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 1.0);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: #2b15453d 1px 10px 20px 5px;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  top: 0;
+  position: sticky;
+  z-index: 1100;
+}
+
+.desktop {
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 0;
+  padding-top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#nametag {
+  flex-grow: 1;
+}
+
+header nav ul > li {
+  padding-left: 2rem;
+}
+
+.Info main {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 25%;
+  height: 100%;
+  display: flex;
+}
+
+.Info main #content p {
+  justify-content: flex-start;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.Info main #content {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.Info main #links {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  min-width: 50%;
+  justify-content: flex-start;
+}
+
+.Info main #links * {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.Info main #links * * {
+  padding-right: 1rem;
+  padding-top: 1rem;
+  transform: scale(100%);
+  max-height: 3.5rem;
+  max-width: 3.5rem;
+}
+
+.Info main * p {
+  font-size: 75%;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#projects {
+  text-align: center;
+  margin-top: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul i {
+  color: black;
+  font-size: 150%;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  font-style: normal;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 50px 0;
+}
+
+h1, h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+p, i {
+  text-align: center;
+  align-items: center;
+}
+
+i a {
+  text-align:center;
+  display:block;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    overflow: hidden;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .menuClicked, .menuUnclicked{
+    display: flex;
+    margin-left: 0;
+  }
+
+  nav ul, .Info main, #projects ul {
+    flex-direction: column;
+  }
+
+  .Info main, #projects ul {
+    height: 30vh;
+    margin-bottom: 5vh;
+  }
+
+  #projects ul li {
+    width: 100%;
+  }
+
+  main section ul i {
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  header nav ul > li {
+    margin-bottom: 10px;
+  }
+
+  .Info main {
+    display: flex;
+  }
+
+  .image-gallery-wrapper {
+    height: 30vh;
+    width: 60vw;
+  }
+  
+  .image-gallery-image {
+    width: 60vw;
+    height: 30vh;
+  }
+  
+  .image-gallery-content {
+    width: 60vw;
+    height: 30vh;
+  }
+
+  .menuClicked + #nametag {
+    display: none;
+  }
+
+  .menuUnclicked + #nametag {
+    width: 20rem;
+    align-items: center;
+    margin-right: 4rem;
+  }
+
+  .menuClicked {
+    margin-left: -7rem;
+  }
+
+  .Info .image-gallery-wrapper {
+    min-width: 50vw;
+  }
+
+  .Info .image-gallery-image {
+    min-width: 50vw;
+  }
+
+  .Info .image-gallery-content {
+    min-width: 50vw;
+  }
+
+  #resumeHeader {
+    margin-top: 15rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#projectHeader {
+  text-decoration: underline;
+  font-size: 250%;
+}
+
+main ul {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+#projects h2 {
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#project1 {
+  text-align: center;
+}
+
+#gitLink {
+  padding-top: 2rem;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.image-gallery-wrapper {
+  display: flex;
+  height: 50vh;
+  width: 60vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: #2b15453d 1px 10px 10px 5px;
+  margin-bottom: 8rem;
+  z-index: 1;
+}
+
+.image-gallery-image {
+  width: 60vw;
+  height: 50vh;
+  z-index: 3;
+}
+
+.image-gallery-content {
+  width: 60vw;
+  height: 50vh;
+  z-index: 3;
+}
+
+.image-gallery-icon:hover {
+  color: white;
+}
+
+.image-gallery-icon {
+  transition: none;
+  z-index: 3;
+}
+
+.Info .image-gallery-wrapper {
+  width: 30vw;
+  margin-left: 0;
+  margin-top: 2rem;
+}
+
+.Info .image-gallery-image {
+  width: 30vw;
+}
+
+.Info .image-gallery-content {
+  width: 30vw;
+}
+
+#resumeHeader {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  align-items: flex-start;
+}

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Sidebar from '../sidebar/sidebar';
 import { lazy } from 'react';
 import ProjectsGallery from '../gallery/projectsGallery';
+import logo from '../../../public/logo.png';
 
 const images = [
     {
@@ -18,7 +19,7 @@ function Home() {
                 <Box as="nav">
                     <Sidebar />
                     <ul id="nametag">
-                        <li><Link to="/">Austin Norgaard</Link></li>
+                        <li><Link to="/"><img src={logo} alt="logo"/></Link></li>
                     </ul>
                     <ul className="desktop">
                         <li><Link to="/">Home</Link></li>

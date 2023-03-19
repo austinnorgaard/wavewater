@@ -35,7 +35,7 @@ function Sidebar () {
             <Box className={menu_class} id="menu">
                 <ul>
                     <li><Link to="/" onClick={updateMenu}>Home</Link></li>
-                    <li id="projectsLink"><Link to="/projects" onClick={updateMenu}>Music</Link></li>
+                    <li id="projectsLink"><Link to="/music" onClick={updateMenu}>Music</Link></li>
                     <li><Link to="/info" onClick={updateMenu}>Contact Info/About</Link></li>
                 </ul>
             </Box>

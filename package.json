@@ -16,6 +16,7 @@
     "import": "^0.0.6",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
+    "nodemon": "^2.0.22",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
@@ -30,7 +31,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "nodemon /src/index.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

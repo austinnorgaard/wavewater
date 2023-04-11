@@ -4,16 +4,11 @@ import '../../index';
 import { Link } from 'react-router-dom';
 import Header from '../header/header';
 
-const images = [
-    {
-    },
-  ];
-
 function Home() {
     return (
         <Box className="Home">
             <Header />
-            <div class="bg-image"/>
+            <div className="bg-image"/>
             <Box as="main" id="main">
                 <Box as="section" id="home">
                     <Box as="h1">Who We Are</Box>
